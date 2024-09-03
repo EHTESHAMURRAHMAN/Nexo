@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:nexo/contactPageDtails.dart';
+import 'package:nexo/Details/contactPageDtails.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+class ContactList extends StatelessWidget {
+  const ContactList({super.key});
 
   @override
   Widget build(BuildContext context) {

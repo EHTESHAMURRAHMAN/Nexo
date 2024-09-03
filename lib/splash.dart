@@ -1,8 +1,7 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:nexo/main.dart';
+import 'package:nexo/HomePage.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -15,7 +14,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Navigate to the main screen after 2 seconds
     Timer(const Duration(seconds: 2), () {
       Get.offAll(() => const HomePage());
     });
