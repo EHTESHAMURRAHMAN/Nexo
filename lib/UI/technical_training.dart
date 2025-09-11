@@ -10,21 +10,27 @@ class TechnicalTrainingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         leading: InkWell(
           onTap: () {
             Get.back();
           },
-          child: const Icon(CupertinoIcons.arrow_left_circle_fill,
-              size: 30, color: Color(0xff2a6ab9)),
+          child: const Icon(
+            CupertinoIcons.arrow_left_circle_fill,
+            size: 30,
+            color: Color(0xff2a6ab9),
+          ),
         ),
         title: const Text(
           'TECHNICAL TRAINING',
           style: TextStyle(
-              fontSize: 18,
-              color: Color(0xff2a6ab9),
-              fontWeight: FontWeight.bold),
+            fontSize: 18,
+            color: Color(0xff2a6ab9),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -46,9 +52,10 @@ class TechnicalTrainingPage extends StatelessWidget {
                   TextSpan(
                     text: '1. ',
                     style: TextStyle(
-                        fontSize: 16,
-                        color: Color(0xff2a6ab9),
-                        fontWeight: FontWeight.bold),
+                      fontSize: 16,
+                      color: Color(0xff2a6ab9),
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   TextSpan(
                     text:
@@ -65,9 +72,10 @@ class TechnicalTrainingPage extends StatelessWidget {
                   TextSpan(
                     text: '2. ',
                     style: TextStyle(
-                        fontSize: 16,
-                        color: Color(0xff2a6ab9),
-                        fontWeight: FontWeight.bold),
+                      fontSize: 16,
+                      color: Color(0xff2a6ab9),
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   TextSpan(
                     text:
@@ -84,9 +92,10 @@ class TechnicalTrainingPage extends StatelessWidget {
                   TextSpan(
                     text: '3. ',
                     style: TextStyle(
-                        fontSize: 16,
-                        color: Color(0xff2a6ab9),
-                        fontWeight: FontWeight.bold),
+                      fontSize: 16,
+                      color: Color(0xff2a6ab9),
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   TextSpan(
                     text:
@@ -103,9 +112,10 @@ class TechnicalTrainingPage extends StatelessWidget {
                   const TextSpan(
                     text: '4. ',
                     style: TextStyle(
-                        fontSize: 16,
-                        color: Color(0xff2a6ab9),
-                        fontWeight: FontWeight.bold),
+                      fontSize: 16,
+                      color: Color(0xff2a6ab9),
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const TextSpan(
                     text:
@@ -115,13 +125,16 @@ class TechnicalTrainingPage extends StatelessWidget {
                   TextSpan(
                     text: 'https://nxu.teachable.com/',
                     style: const TextStyle(fontSize: 16, color: Colors.blue),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () async {
-                        final Uri url = Uri.parse('https://nxu.teachable.com/');
-                        if (!await launchUrl(url)) {
-                          throw Exception('Could not launch $url');
-                        }
-                      },
+                    recognizer:
+                        TapGestureRecognizer()
+                          ..onTap = () async {
+                            final Uri url = Uri.parse(
+                              'https://nxu.teachable.com/',
+                            );
+                            if (!await launchUrl(url)) {
+                              throw Exception('Could not launch $url');
+                            }
+                          },
                   ),
                 ],
               ),
@@ -146,13 +159,16 @@ class TechnicalTrainingPage extends StatelessWidget {
                   TextSpan(
                     text: 'www.NexoSoluitons.com',
                     style: const TextStyle(fontSize: 16, color: Colors.blue),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () async {
-                        final Uri url = Uri.parse('https://nexosolutions.com');
-                        if (!await launchUrl(url)) {
-                          throw Exception('Could not launch $url');
-                        }
-                      },
+                    recognizer:
+                        TapGestureRecognizer()
+                          ..onTap = () async {
+                            final Uri url = Uri.parse(
+                              'https://nexosolutions.com',
+                            );
+                            if (!await launchUrl(url)) {
+                              throw Exception('Could not launch $url');
+                            }
+                          },
                   ),
                   const TextSpan(
                     text: ')',
@@ -173,12 +189,16 @@ class TechnicalTrainingPage extends StatelessWidget {
                   TextSpan(
                     text: 'support@NexoSolutions.com',
                     style: const TextStyle(fontSize: 16, color: Colors.blue),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        launchUrl(Uri(
-                            scheme: 'mailto',
-                            path: 'support@NexoSolutions.com'));
-                      },
+                    recognizer:
+                        TapGestureRecognizer()
+                          ..onTap = () {
+                            launchUrl(
+                              Uri(
+                                scheme: 'mailto',
+                                path: 'support@NexoSolutions.com',
+                              ),
+                            );
+                          },
                   ),
                   const TextSpan(
                     text: ' or call \n',
@@ -187,10 +207,11 @@ class TechnicalTrainingPage extends StatelessWidget {
                   TextSpan(
                     text: '+1 (832) 510-8191',
                     style: const TextStyle(fontSize: 16, color: Colors.blue),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        launchUrl(Uri(scheme: 'tel', path: '+18325108191'));
-                      },
+                    recognizer:
+                        TapGestureRecognizer()
+                          ..onTap = () {
+                            launchUrl(Uri(scheme: 'tel', path: '+18325108191'));
+                          },
                   ),
                 ],
               ),

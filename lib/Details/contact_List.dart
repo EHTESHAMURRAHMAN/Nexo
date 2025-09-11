@@ -11,7 +11,9 @@ class ContactList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         leading: InkWell(
           onTap: () {
@@ -81,15 +83,6 @@ class ContactList extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  void _makePhoneCall(String phoneNumber) async {
-    final Uri phoneUri = Uri(scheme: 'tel', path: phoneNumber);
-    if (await canLaunchUrl(phoneUri)) {
-      await launchUrl(phoneUri);
-    } else {
-      throw 'Could not launch $phoneNumber';
-    }
   }
 
   void _sendEmail(String emailAddress) async {

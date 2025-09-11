@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/route_manager.dart';
 import 'package:nexo_new/Details/contactPageDtails.dart';
 import 'package:nexo_new/UI/amine_units.dart';
@@ -21,7 +22,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle(
+          systemNavigationBarColor: Colors.white,
+        ),
         backgroundColor: const Color(0xFF2A6AB9),
         elevation: 0,
         title: const Text(
